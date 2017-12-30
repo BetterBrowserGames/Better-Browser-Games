@@ -1,7 +1,9 @@
 setting up db
-* os debian 9 / postgres 9.6
+Guide for os debian 9 / postgres 9.6
+
+* make sure you have a vps for debian 9 stretch ready
 * make sure ssh is installed
-* make sure sudo npm is installed
+* make sure npm is installed
 * run "apt-get install postgresql-9.6"
 * log into the postgres user by running "su - postgres"
 * user command "createuser NAMEHERE" to make a user
