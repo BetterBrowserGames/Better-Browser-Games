@@ -10,7 +10,7 @@ Guide for os debian 9 / postgres 9.6
 * start postgreSQL console by typing psql (use command "\q" to quit the psql console)
 * now you can run sql - "CREATE DATABASE db_name_here;" for instance
 * change user password you made with "alter user USERNAMEHERE with encrypted password 'PASSWORDHERE';"
-* to give user privileges: "grant all privileges on database DATABASENAMEHERE to USERNAMEHERE ;"
+* to give user privileges: "grant all privileges on database DATABASENAMEHERE to USERNAMEHERE ;" (OPTIONAL: if you need the user to be able to create extensions: " ALTER USER USERNAMEHERE WITH SUPERUSER;")
 * Make sure firewall exposes to the application ip that will be hitting and local home ip for updating schema/data
 	- you will also need to update postgres config file to allow remote connections to do so:
 		1. find the file by running "find / -name "postgresql.conf""
